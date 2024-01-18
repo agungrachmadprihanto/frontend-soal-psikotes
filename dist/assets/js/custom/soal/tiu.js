@@ -1,0 +1,123 @@
+
+var tiu = [
+  {
+    id : 1,
+    image : '../../../dist/assets/media/products/1.png',
+    question: "Gambar yang benar .. ?",
+    options: ["1", "2", "3", "4"],
+  },
+  {
+    id : 2,
+    image : '../../../dist/assets/media/products/2.png',
+    question: "Gambar yang benar .. ?",
+    options: ["1", "2", "3", "4"],
+  },
+  {
+    id : 3,
+    image : '../../../dist/assets/media/products/3.png',
+    question: "Gambar yang benar .. ?",
+    options: ["1", "2", "3", "4"],
+  },
+  {
+    id : '4',
+    image : '../../../dist/assets/media/products/2.png',
+    question: "Gambar yang benar .. ?",
+    options: ["1", "2", "3", "4"],
+  },
+  {
+    id : '5',
+    image : '../../../dist/assets/media/products/3.png',
+    question: "Gambar yang benar .. ?",
+    options: ["1", "2", "3", "4"],
+  },
+  {
+    id : '6',
+    image : '../../../dist/assets/media/products/1.png',
+    question: "Gambar yang benar .. ?",
+    options: ["1", "2", "3", "4"],
+  },
+  {
+    id : '7',
+    image : '../../../dist/assets/media/products/2.png',
+    question: "Gambar yang benar .. ?",
+    options: ["1", "2", "3", "4"],
+  },
+  {
+    id : '8',
+    image : '../../../dist/assets/media/products/3.png',
+    question: "Gambar yang benar .. ?",
+    options: ["1", "2", "3", "4"],
+  },
+  {
+    id : '9',
+    image : '../../../dist/assets/media/products/2.png',
+    question: "Gambar yang benar .. ?",
+    options: ["1", "2", "3", "4"],
+  },
+  {
+    id : '10',
+    image : '../../../dist/assets/media/products/3.png',
+    question: "Gambar yang benar .. ?",
+    options: ["1", "2", "3", "4"],
+  },
+  {
+    id : '11',
+    image : '../../../dist/assets/media/products/1.png',
+    question: "Gambar yang benar .. ?",
+    options: ["1", "2", "3", "4"],
+  },
+  {
+    id : '12',
+    image : '../../../dist/assets/media/products/2.png',
+    question: "Gambar yang benar .. ?",
+    options: ["1", "2", "3", "4"],
+  },
+  {
+    id : '13',
+    image : '../../../dist/assets/media/products/3.png',
+    question: "Gambar yang benar .. ?",
+    options: ["1", "2", "3", "4"],
+  },
+  {
+    id : '14',
+    image : '../../../dist/assets/media/products/2.png',
+    question: "Gambar yang benar .. ?",
+    options: ["1", "2", "3", "4"],
+  },
+  {
+    id : '15',
+    image : '../../../dist/assets/media/products/3.png',
+    question: "Gambar yang benar .. ?",
+    options: ["1", "2", "3", "4"],
+  },
+  {
+    id : '16',
+    image : '../../../dist/assets/media/products/1.png',
+    question: "Gambar yang benar .. ?",
+    options: ["1", "2", "3", "4"],
+  },
+  {
+    id : '17',
+    image : '../../../dist/assets/media/products/2.png',
+    question: "Gambar yang benar .. ?",
+    options: ["1", "2", "3", "4"],
+  },
+  {
+    id : '18',
+    image : '../../../dist/assets/media/products/3.png',
+    question: "Gambar yang benar .. ?",
+    options: ["1", "2", "3", "4"],
+  },
+  {
+    id : '19',
+    image : '../../../dist/assets/media/products/2.png',
+    question: "Gambar yang benar .. ?",
+    options: ["1", "2", "3", "4"],
+  },
+  {
+    id : '20',
+    image : '../../../dist/assets/media/products/3.png',
+    question: "Gambar yang benar .. ?",
+    options: ["1", "2", "3", "4"],
+  },
+];
