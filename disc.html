@@ -42,16 +42,49 @@
 				display: block;
 			}
 
+			.header{
+				background-color: rgb(255, 55, 55);
+				padding-bottom: 1rem;
+
+				h3{
+					color: aliceblue;
+					margin-top: 1.5rem;
+					margin-left: 1rem;
+				}
+
+				h4{
+					text-align: end;
+					color: aliceblue;
+					margin-top: 1rem;
+					margin-right: 1rem;
+					img{
+						width: 45px;
+						
+					}
+				}				
+			}			
+		
 		</style>
 
 	</head>
 	<body id="kt_app_body" data-kt-app-header-fixed="true" data-kt-app-header-fixed-mobile="true" data-kt-app-sidebar-enabled="true" data-kt-app-sidebar-fixed="true" data-kt-app-sidebar-hoverable="true" data-kt-app-sidebar-push-header="true" data-kt-app-sidebar-push-toolbar="true" data-kt-app-sidebar-push-footer="true" data-kt-app-toolbar-enabled="true" class="app-default">
+
+		<div class="header">
+			<div class="row">
+				<div class="col-6">
+					<h3>Psikotes BPR Mandiri Arth Abadi</h3>
+				</div>
+				<div class="col-6">
+					<h4><img src="user.jpg" alt="..."> Hai, Andi </h4>
+					
+				</div>
+			</div>
+		</div>
 				
 		<div class="app-main flex-column flex-row-fluid" id="kt_app_main">
             <div class="d-flex flex-column flex-column-fluid">
                 <div id="kt_app_content" class="app-content flex-column-fluid">
-                    <div id="kt_app_content_container" class="app-container container-fluid">
-
+                    <div id="kt_app_content_container" class="app-container container-fluid">				
                         <section id="intruksi" hidden>
                             <div class="row">
                                 <div class="col-lg-12 col-xxl-4">
@@ -83,50 +116,31 @@
                         </section>
                      
                         <section id="kuis" >
-							<div class="row gx-12 gx-xl-12"> 
-								<div class="card-title">
-									<div class="row">
-										<div class="col-2">										
-											<span class="text-sm-end number" id="number" name="number"></span>
-										</div>
-										<div class="col-10">
-											<p class="fw-bold mb-1 text-center" style="font-size: 15px" id="timer">
-												Time : 06:00
-											</p>
-										</div>								
-									</div>														                                 						
-								</div> 
-								<hr>                                           
+							<div class="row gx-12 gx-xl-12"> 														                                           
 								<div class="col-9">
-									<div class="card card-flush">                                                                                                                                 
+									<div class="card card-flush">
+										<div class="card-title">
+											<div class="row">
+												<div class="col-2" id="nomorsoal">										
+													<h4>Soal No.<span class="text-sm-end number" id="number" name="number"></span></h4>
+												</div>
+												<div class="col-10">
+													<p class="fw-bold mb-1 text-center" style="font-size: 15px" id="timer">
+														Time : 06:00
+													</p>
+												</div>								
+											</div>
+										</div>
+										                                                                                                                                 
 										<div class="card-body">
 											<div class="tab-content">
 												<h1 id="quiz" name="question"></h1>
 												
 												<div class="tab-pane fade show active mt-10 options">                          
-													<!-- <div class="d-flex flex-stack position-relative mt-3 options"> -->
-														<!-- <div class="dynamic-container"  id="dynamic-container"></div>                                                     -->
-														<!-- <div class="d-flex flex-stack position-relative mt-5">
-															<div class="position-absolute h-100 w-4px bg-danger rounded top-0 start-0"></div>                                                        
-																<div class="form-check ms-5 option-block" id="question-option" name="question-option">
-																	<input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off">
-																	<label class="btn btn-outline-success fw-bold text-black-800 fs-5 text-hover-primary" for="success-outlined">Saya adalah pekerja keras</label>
-															</div>                                                                                                                                         
-														</div>                                                   -->
-													<!-- </div> -->
-													<!-- <div class="d-flex flex-stack position-relative mt-3">                                                      
-														<div class="d-flex flex-stack position-relative mt-8">
-															<div class="position-absolute h-100 w-4px bg-danger rounded top-0 start-0"></div>
-																<div class="form-check ms-5 option-block">
-																	<input type="radio" class="btn-check" name="options-outlined" id="success-outlined1" autocomplete="off">
-																	<label class="btn btn-outline-success fw-bold text-black-800 fs-5 text-hover-primary" for="success-outlined1">Saya tidak mudah murung</label>
-																</div>                                                                                   
-														</div>                                   
-													</div>                                                                                                                                            -->
+										                                                                                                                                           -->
 												</div>
 										
-												
-												<!-- <div class="options"></div> -->
+											
 											</div>
 										</div>
 									</div>
@@ -151,7 +165,8 @@
 									<button class="btn btn-primary btn-lg flex-shrink-0" name="next" id="next" onclick="changeQuestion(1)"><i class="fas fa-arrow-right"></i></button>
 									<button class="btn btn-primary btn-lg flex-shrink-0" name="submit" id="submit" hidden>Kirim</button>
 								</div>                                 							
-							</div>
+							</div>			
+
 							</section>
                     </div>
                     <!--end::Content container-->
@@ -202,7 +217,7 @@
 			function showQuestion() {
 				const currentQ = questions[currentQuestion];
 				quizContainer.textContent = currentQ.question;
-				numberPage.textContent = "Number " + currentQ.id + " of " + questions.length;
+				numberPage.textContent = currentQ.id;
 				optionsContainer.innerHTML = '';
 
 				
